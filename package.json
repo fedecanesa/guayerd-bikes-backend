@@ -1,0 +1,27 @@
+{
+  "name": "guayerd-bikes-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasla/guayerd-bikes-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasla/guayerd-bikes-backend/issues"
+  },
+  "homepage": "https://github.com/matiasla/guayerd-bikes-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.8"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
