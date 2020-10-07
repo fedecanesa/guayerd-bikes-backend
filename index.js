@@ -76,19 +76,6 @@ app.get("/productList", (req,res)=> {
 
 });
 
-app.post("/cargar", (req,res)=> {
-
-    const doc = new Producto({
-        ...req.body
-    });
-
-    doc.save()
-    .then(producto=> {
-        res.send(producto);
-    });
-
-});
-
 //submitForm
 app.post("/submitForm", (req,res)=> {
 
@@ -141,6 +128,40 @@ mongoose.connect(URL_DATABASE, {useNewUrlParser:true, useUnifiedTopology:true} ,
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// app.post("/cargar", (req,res)=> {
+
+//     const doc = new Producto({
+//         ...req.body
+//     });
+
+//     doc.save()
+//     .then(producto=> {
+//         res.send(producto);
+//     });
+
+// });
 
 
 
