@@ -25,10 +25,6 @@ app.use(express.urlencoded({extended:false}));
 
 //RUTAS------------------------------------------------------------------------------------
 
-app.get("/", (req,res)=> {
-    res.status(200).send("Root");
-});
-
 //getUrl
 app.get("/getUrl", (req,res)=> {
 
