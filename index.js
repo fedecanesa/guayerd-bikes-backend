@@ -14,8 +14,6 @@ const app = express();
 
 //CONFIGURACION
 app.set("port", process.env.PORT || 3000);
-const DOMINIO = "slkdjflksdjf";
-
 
 //MIDDLEWARES
 app.use(cors());
@@ -23,15 +21,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
-
 //RUTAS------------------------------------------------------------------------------------
-
-//getUrl
-app.get("/getUrl", (req,res)=> {
-
-    res.status(200).send({url:DOMINIO});
-
-});
 
 //getHomeBanner
 app.get("/getHomeBanner", (req,res)=> {
@@ -45,7 +35,6 @@ app.get("/getHomeBanner", (req,res)=> {
     });
 
 });
-
 
 //userData
 app.post("/userData", (req,res)=> {
@@ -106,7 +95,6 @@ app.get("/getCoupon", (req,res)=> {
     });
 
 });
-
 
 //BASE DE DATOS Y SERVER
 mongoose.connect(URL_DB, {useNewUrlParser:true, useUnifiedTopology:true} , err=> {
