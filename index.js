@@ -7,6 +7,7 @@ const User = require("./models/User.js");
 const Producto = require("./models/Producto.js");
 const Consulta = require("./models/Consulta.js");
 const Descuento = require("./models/Descuento.js");
+const URL_DB = require("./url_database");
 
 //APP
 const app = express();
@@ -108,9 +109,7 @@ app.get("/getCoupon", (req,res)=> {
 
 
 //BASE DE DATOS Y SERVER
-const URL_DATABASE = "mongodb+srv://root:toor@cluster0.mbevg.mongodb.net/guayerd-bikes?retryWrites=true&w=majority";
-
-mongoose.connect(URL_DATABASE, {useNewUrlParser:true, useUnifiedTopology:true} , err=> {
+mongoose.connect(URL_DB, {useNewUrlParser:true, useUnifiedTopology:true} , err=> {
 
     if(err) {
         console.log("No se pudo establecer una conexion con la base de datos");
