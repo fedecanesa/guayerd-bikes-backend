@@ -7,7 +7,7 @@ const User = require("./models/User.js");
 const Producto = require("./models/Producto.js");
 const Consulta = require("./models/Consulta.js");
 const Descuento = require("./models/Descuento.js");
-const URL_DB = require("./url_database");
+const URL_DB = require("./config.js");
 
 //APP
 const app = express();
