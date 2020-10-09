@@ -31,7 +31,7 @@ app.get("/getHomeBanner", (req,res)=> {
         res.status(200).send(banner);
     })
     .catch(err=> {
-        res.status(400).send({err:"Error 400"});
+        res.status(500).send({err:"Error 500"});
     });
 
 });
@@ -48,7 +48,7 @@ app.post("/userData", (req,res)=> {
         res.status(200).send(user);
     })
     .catch(err=> {
-        res.status(400).send({err:"Error 400"});
+        res.status(500).send({err:"Error 500"});
     });
 
 });
@@ -61,7 +61,7 @@ app.get("/productList", (req,res)=> {
         res.status(200).send(productos);
     })
     .catch(err=> {
-        res.status(400).send({err:"Error 400"});
+        res.status(500).send({err:"Error 500"});
     });
 
 });
@@ -78,7 +78,7 @@ app.post("/submitForm", (req,res)=> {
         res.status(200).send(consulta);
     })
     .catch(err=> {
-        res.status(400).send({err:"Error 400"});
+        res.status(500).send({err:"Error 500"});
     });
 
 });
@@ -91,7 +91,7 @@ app.get("/getCoupon", (req,res)=> {
         res.status(200).send(cupon);
     })
     .catch(err=> {
-        res.status(400).send({err:"Error 400"});
+        res.status(500).send({err:"Error 500"});
     });
 
 });
